@@ -1,1 +1,7 @@
-# Calculator Clone Project
+# 계산기
+## 페이지 구성
+- 메인 페이지 / index.html
+## 개요
+
+## 요소 및 기본 동작 안내
+    

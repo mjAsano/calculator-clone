@@ -6,5 +6,6 @@
 ## 사용기술
 - JavaScript(ES6)
 - Node.js
+- Electron.js
 ## 요소 및 기본 동작 안내
     

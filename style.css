@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat';
+
+}
+section {
+    background-color: rgba(18, 26, 31, 0.92);
+    color: whitesmoke;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+
+    border-radius: 8px;
+    overflow: hidden;
+}
+.display{
+
+    height: 100px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+}
+.display-1 {
+    opacity: .4;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.temp-result{
+    position: absolute;
+    bottom: 0;
+    lelf: 10;
+    font-size: 20px;
+    opacity: .4;
+}
+.all_buttons{
+    color: whitesmoke;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+.button{
+    border: .5px solid rgba(16, 16, 16, 0.297);
+    background-color: rgb(56, 56, 56);
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.number {
+    background-color: rgb(89, 89, 89);
+}
+.operation {
+    background-color: rgb(243, 162, 60);
+}
+.mod {
+    background-color: rgb(56, 56, 56);
+}
+.equal {
+    background-color: rgb(243, 162, 60);
+}
+.zero {
+    width: 200%;
+}
+.blank {
+    visibility: hidden;
+}
+.button:active{
+    background-color: rgb(182, 182, 182);
+}
+
+.operation:active{
+    background-color: rgb(218, 144, 53);
+}
+.mod:active{
+    background-color: rgb(182, 182, 182);
+}
+
+
+.btn-0{
+    grid-column: 1/3;
+}

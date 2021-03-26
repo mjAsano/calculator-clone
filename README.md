@@ -1,2 +1,1 @@
-# electron-calculator
-toy
+#Calculator Clone Project

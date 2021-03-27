@@ -76,6 +76,7 @@ operationEl.forEach( operation => {
         haveDot = false;
         arrNum.push(dis2Num)
         arrOpe.push(e.target.innerText)
+        display1El.innerText = ""
         dis1Num = dis2Num
         display1El.innerText += dis1Num + e.target.innerText;
         dis2Num = ''    

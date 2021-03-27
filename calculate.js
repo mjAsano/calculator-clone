@@ -44,7 +44,6 @@ clearLastEl.forEach( clearLast =>  {
             dis2Num = dis2Num.substring(0, dis2Num.length -1)
             display2El.innerText = dis2Num;
         }
-
     })
 })
 numbersEl.forEach( number => {
@@ -61,8 +60,7 @@ numbersEl.forEach( number => {
             result = 0;
         }
        if (e.target.innerText == '.' && !haveDot) {
-        haveDot = true;
-       
+        haveDot = true; 
         }else if(e.target.innerText == '.' && haveDot ) {
         return;
         }
@@ -81,9 +79,7 @@ operationEl.forEach( operation => {
         dis1Num = dis2Num
         display1El.innerText += dis1Num + e.target.innerText;
         dis2Num = ''    
-        display2El.innerText = '0'
-
-        
+        display2El.innerText = '0'    
     })
 })
 equalEl.forEach( equal => {
@@ -115,8 +111,7 @@ equalEl.forEach( equal => {
                         result = parseFloat(result) / parseFloat(item)
                         break;
                 }        
-            }
-            
+            }      
         })
         display2El.innerText = result;
         isNew = false;

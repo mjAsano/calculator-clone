@@ -5,7 +5,6 @@
 }
 html{
     font-family: 'Montserrat';
-
 }
 section {
     background-color: rgba(18, 26, 31, 0.92);
@@ -85,15 +84,9 @@ section {
 .button:active{
     background-color: rgb(182, 182, 182);
 }
-
 .operation:active{
     background-color: rgb(218, 144, 53);
 }
 .mod:active{
     background-color: rgb(182, 182, 182);
-}
-
-
-.btn-0{
-    grid-column: 1/3;
 }

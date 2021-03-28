@@ -12,6 +12,7 @@ let dis2Num = '';
 let result = 0.0;
 let lastOperation = '';
 let isNew = true;
+let isPositive = true;
 let haveDot = false;
 const arrNum = [];
 const arrOpe = []
@@ -68,15 +69,31 @@ numbersEl.forEach( number => {
         display2El.innerText = dis2Num;
     })
 })
+
 operationEl.forEach( operation => {
     operation.addEventListener('click', (e) => {
         if(dis2Num == "") {
             return;
         }
+        if(display1El.innerText == 0) {
+            display1El.innerText = ""
+        }
+        if (operation.innerText == '+/-'){
+            if( isPositive == true ) {
+                display2El.innerText = display2El.innerText * (-1)  
+                dis2Num = dis2Num * (-1)
+                isPositive = false; 
+                return;
+            } else if (isPositive == false) {
+                display2El.innerText = display2El.innerText * (-1)
+                dis2Num = dis2Num * (-1)  
+                isPositive = true; 
+                return;
+            }
+        }
         haveDot = false;
         arrNum.push(dis2Num)
-        arrOpe.push(e.target.innerText)
-        display1El.innerText = ""
+        arrOpe.push(e.target.innerText) 
         dis1Num = dis2Num
         display1El.innerText += dis1Num + e.target.innerText;
         dis2Num = ''    
